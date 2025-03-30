@@ -22,7 +22,7 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
 						href="#hero"
 						className="block md:hidden font-racing text-lg font-semibold text-colorOne ml-3 items-center justify-center hover:text-colorFour mt-2"
 					>
-						AR Transport
+						Apex Logistics
 					</a>
 					<FontAwesomeIcon
 						icon={faTruck}
