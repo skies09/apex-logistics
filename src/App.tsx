@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Menu from "./components/menu";
+import Navbar from "./components/navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Contact from "./pages/contact";
+import Hero from "./pages/hero";
+import IconCloud from "./components/iconCloud";
+
+const App: React.FC = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+	return (
+		<div>
+			<Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+			<div className="relative w-full h-screen snap-mandatory snap-y -mt-8">
+				<Hero />
+				<IconCloud />
+				<Contact />
+			</div>
+		</div>
+	);
+};
 
 export default App;
