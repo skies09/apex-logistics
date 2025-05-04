@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Services() {
 	return (
 		<section
-			className="px-6 py-12 md:px-16 md:py-20 bg-gray-50"
+			className="w-screen overflow-x-hidden px-6 py-12 md:px-16 md:py-20 bg-gray-50"
 			id="services"
 		>
 			<div className="container mx-auto max-w-7xl text-center">
@@ -53,7 +53,7 @@ export default function Services() {
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
-					className="mb-12 md:flex md:items-center md:justify-between md:px-6"
+					className="mb-12 md:flex md:flex-row-reverse md:items-center md:justify-between md:px-6"
 				>
 					<div className="md:w-1/2">
 						<h3 className="text-2xl font-semibold mb-4 text-colorTwo font-oswald">

@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 
 export default function About() {
 	return (
-		<section className="px-6 py-12 md:py-20 bg-white" id="about">
+		<section
+			className="w-screen overflow-x-hidden px-6 py-12 md:py-20 bg-white"
+			id="about"
+		>
 			<div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
 				{/* Text Section */}
 				<motion.div

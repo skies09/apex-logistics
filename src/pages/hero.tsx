@@ -43,7 +43,7 @@ const Hero = () => {
 	return (
 		<>
 			<div
-				className="w-screen overflow-hidden h-[50vh] md:h-[90vh] bg-cover bg-center mt-8 border-b-8 border-colorThree"
+				className="w-screen overflow-x-hidden h-[50vh] md:h-[90vh] bg-cover bg-center mt-8 border-b-8 border-colorThree"
 				style={{
 					backgroundImage: "url(../../assets/images/truck2.jpg)",
 				}}

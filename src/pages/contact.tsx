@@ -112,7 +112,7 @@ const Contact = () => {
 
 	return (
 		<div
-			className="w-screen overflow-hidden bg-colorThree pb-6 lg:pb-12"
+			className="w-screen overflow-x-hidden h-[70vh] bg-colorThree pb-6 lg:pb-12"
 			ref={containerRef}
 			id="contact"
 		>
