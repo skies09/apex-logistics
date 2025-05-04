@@ -23,7 +23,7 @@ export default function Services() {
 						<h3 className="text-2xl font-semibold mb-4 text-colorTwo font-oswald">
 							Cargo Transport (HGV)
 						</h3>
-						<p className="text-colorTwo font-zilla text-lg leading-relaxed">
+						<p className="text-colorTwo font-zilla text-lg leading-relaxed md:text-left">
 							I specialize in transporting all kinds of cargo,
 							from small packages to large shipments, using my{" "}
 							<span className="font-semibold">
@@ -32,7 +32,7 @@ export default function Services() {
 							. I am able to handle your freight safely and
 							securely, ensuring timely and efficient deliveries.
 						</p>
-						<p className="text-colorTwo font-zilla text-lg mt-4">
+						<p className="text-colorTwo font-zilla text-lg mt-4 md:text-left">
 							Whether you need to move goods locally or across
 							long distances, I can accommodate your logistics
 							needs with the utmost professionalism.
@@ -59,7 +59,7 @@ export default function Services() {
 						<h3 className="text-2xl font-semibold mb-4 text-colorTwo font-oswald">
 							People Transport (Bus & Coach)
 						</h3>
-						<p className="text-gray-700 text-lg leading-relaxed text-colorTwo font-zilla">
+						<p className="text-lg leading-relaxed text-colorTwo font-zilla md:text-left">
 							I offer comfortable and reliable transport for
 							groups, whether it’s a business trip, a school
 							outing, or a special event. With my{" "}
@@ -69,7 +69,7 @@ export default function Services() {
 							, I can cater to your needs, whether you're
 							traveling with a small group or a large party.
 						</p>
-						<p className="text-gray-700 text-lg mt-4 text-colorTwo font-zilla">
+						<p className="text-lg mt-4 text-colorTwo font-zilla md:text-left">
 							From day trips to longer journeys, you can count on
 							me for safe and dependable transportation.
 						</p>
@@ -94,7 +94,7 @@ export default function Services() {
 					<h3 className="text-2xl font-semibold mb-4 text-colorTwo font-oswald">
 						Custom Transport Solutions
 					</h3>
-					<p className="text-gray-700 text-lg leading-relaxed text-colorTwo font-zilla">
+					<p className="text-lg leading-relaxed text-colorTwo font-zilla">
 						Need something specific? I also offer tailored transport
 						solutions to meet your unique requirements. Whether you
 						need to transport special equipment, oversized items, or

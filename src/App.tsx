@@ -18,9 +18,11 @@ const App: React.FC = () => {
 			<div className="relative w-full h-screen snap-mandatory snap-y -mt-8">
 				<Hero />
 				<IconCloud />
+				<Border />
 				<About />
 				<Border />
 				<Services />
+				<Border />
 				<Contact />
 			</div>
 		</div>

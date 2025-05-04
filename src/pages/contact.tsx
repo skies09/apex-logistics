@@ -66,7 +66,7 @@ const Contact = () => {
 				onSubmit={handleSubmit}
 			>
 				<Form className="flex flex-col justify-start items-start w-full lg:w-10/12">
-					<p className="text-lg lg:text-xl text-colorFive font-bold flex justify-center text-center font-monoTwo opacity-90">
+					<p className="text-lg lg:text-xl text-colourThree font-bold flex justify-center text-center font-monoTwo opacity-90">
 						Name
 					</p>
 					<Field
@@ -75,7 +75,7 @@ const Contact = () => {
 						id="user_name"
 						name="user_name"
 					/>
-					<p className="text-lg lg:text-xl text-colorFive font-bold flex justify-center text-center font-monoTwo opacity-90">
+					<p className="text-lg lg:text-xl text-colourThree font-bold flex justify-center text-center font-monoTwo opacity-90">
 						Email
 					</p>
 					<Field
@@ -85,11 +85,11 @@ const Contact = () => {
 						name="user_email"
 					/>
 					<ErrorMessage
-						className="text-sm text-colorOne font-bold flex justify-center text-center font-monoTwo opacity-90 -mt-2"
+						className="text-sm text-colourThree font-bold flex justify-center text-center font-monoTwo opacity-90 -mt-2"
 						name="user_email"
 						component="div"
 					/>
-					<p className="text-lg lg:text-xl text-colorFive font-bold flex justify-center text-center font-monoTwo">
+					<p className="text-lg lg:text-xl text-colourThree font-bold flex justify-center text-center font-monoTwo">
 						Message
 					</p>
 					<Field
@@ -100,7 +100,7 @@ const Contact = () => {
 						rows="3"
 					/>
 					<button
-						className="flex justify-center items-center mx-auto px-6 py-1 mt-1 bg-colorTwo font-racing text-colorFive font-medium border border-colorFive rounded-xl hover:bg-colorTwo hover:text-colorFive hover:border-2 hover:border-solid hover:border-colorFour"
+						className="flex justify-center items-center mx-auto px-6 py-1 mt-1 bg-colorThree font-racing text-colorOne font-medium border border-colorThree rounded-xl hover:bg-colorTwo hover:text-colourThree hover:border-2 hover:border-solid hover:border-colorFour text-lg"
 						type="submit"
 					>
 						{loading ? "Sending..." : "Send"}
@@ -112,7 +112,7 @@ const Contact = () => {
 
 	return (
 		<div
-			className="w-screen overflow-x-hidden h-[70vh] bg-colorThree pb-6 lg:pb-12"
+			className="w-screen overflow-x-hidden h-[70vh] bg-colorFive pb-6 lg:pb-12"
 			ref={containerRef}
 			id="contact"
 		>
@@ -120,7 +120,7 @@ const Contact = () => {
 				initial={{ opacity: 0, y: -100 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
-				className="pt-16 lg:pt-20 text-lg lg:text-2xl text-colorFive font-bold flex justify-center text-center font-monoTwo"
+				className="pt-16 lg:pt-20 text-lg lg:text-2xl text-colourThree font-bold flex justify-center text-center font-monoTwo px-2"
 			>
 				Whether It's Cargo or Passengers, I’ve Got You Covered!
 				<br />
@@ -129,14 +129,14 @@ const Contact = () => {
 
 			<div className="pt-2 lg:pt-8 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto">
 				<motion.div
-					className="w-10/12 flex justify-center items-start bg-colorThree h-80 lg:h-96"
+					className="w-10/12 flex justify-center items-start bg-colorFive h-80 lg:h-96"
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{ duration: 5, ease: "easeOut", delay: 0.5 }}
 				>
 					{!formSubmitted && <ContactForm />}
 					{formSubmitted && (
-						<p className="pt-16 lg:pt-28 text-lg lg:text-xl text-colorFive font-bold flex justify-center text-center font-monoTwo">
+						<p className="pt-16 lg:pt-28 text-lg lg:text-xl text-colourThree font-bold flex justify-center text-center font-monoTwo">
 							Thanks, I'll get back to you shortly!
 						</p>
 					)}
