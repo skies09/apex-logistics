@@ -50,7 +50,7 @@ const Menu = ({ menuOpen, setMenuOpen }: MenuProps) => {
 				</li>
 				<li className="mt-3" onClick={() => setMenuOpen(false)}>
 					<a
-						href="#portfolio"
+						href="#services"
 						className="flex justify-center items-center"
 					>
 						<FontAwesomeIcon
