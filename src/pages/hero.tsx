@@ -35,7 +35,12 @@ const Hero = () => {
 				text="Contact"
 				className="font-fugaz px-6 py-2 bg-colorOne text-colorThree border border-colorOne rounded-xl tracking-wider font-semibold lg:overflow-hidden"
 				active={true}
-				// action={"contact"}
+				action={() => {
+					const contactSection = document.getElementById("contact");
+					if (contactSection) {
+						contactSection.scrollIntoView({ behavior: "smooth" });
+					}
+				}}
 			/>
 		);
 	};
