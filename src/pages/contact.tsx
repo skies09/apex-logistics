@@ -191,6 +191,7 @@ const Contact = () => {
 				initial={{ opacity: 0, y: -100 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 2, ease: "easeOut", delay: 0.2 }}
+				viewport={{ once: true }}
 				className="pt-16 lg:pt-20 text-lg lg:text-2xl text-colourThree font-bold flex justify-center text-center font-monoTwo px-2"
 			>
 				Whether It's Cargo or Passengers, I’ve Got You Covered!
@@ -204,6 +205,7 @@ const Contact = () => {
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
 					transition={{ duration: 5, ease: "easeOut", delay: 0.5 }}
+					viewport={{ once: true }}
 				>
 					{!formSubmitted && <ContactForm />}
 					{formSubmitted && (
