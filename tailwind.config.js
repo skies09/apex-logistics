@@ -4,11 +4,20 @@ module.exports = {
 
 	theme: {
 		colors: {
-			colorOne: "#C0C0C0",
-			colorTwo: "#2A2A2A",
-			colorThree: "#000000",
-			colorFour: "#383838",
-			colorFive: "#A6A6A6",
+			// Primary brand colors - Security & Trust
+			colorOne: "#0066CC", // Deep blue - trust, security
+			colorTwo: "#1A4D7A", // Darker blue - stability
+			colorThree: "#0A1929", // Near black - professionalism
+			colorFour: "#003366", // Navy blue - depth
+			colorFive: "#E8F4F8", // Light blue-gray - clean backgrounds
+			// Accent colors - Speed & Energy
+			accentOrange: "#FF6B35", // Vibrant orange - speed, energy
+			accentAmber: "#FFA500", // Amber - action
+			// Supporting colors
+			lightGray: "#F5F7FA", // Very light gray
+			mediumGray: "#6B7280", // Medium gray for text
+			white: "#FFFFFF",
+			black: "#000000",
 		},
 		fontFamily: {
 			fugaz: ["Fugaz One", "sans-serif"],
@@ -24,10 +33,12 @@ module.exports = {
 				2000: "2000ms",
 			},
 			boxShadow: {
-				"shadow-colorOne":
-					"0 0 5px #00A8E8, 0 0 10px #00A8E8, 0 0 20px #00A8E8, 0 0 40px #00A8E8",
-				"shadow-colorTwo":
-					"0 0 5px #003459, 0 0 10px #003459, 0 0 20px #003459, 0 0 40px #003459",
+				"shadow-primary":
+					"0 4px 14px 0 rgba(0, 102, 204, 0.15), 0 0 0 1px rgba(0, 102, 204, 0.05)",
+				"shadow-accent":
+					"0 4px 14px 0 rgba(255, 107, 53, 0.25), 0 0 0 1px rgba(255, 107, 53, 0.1)",
+				"shadow-elevated":
+					"0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1)",
 			},
 		},
 	},

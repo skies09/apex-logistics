@@ -17,12 +17,9 @@ const Button: React.FC<ButtonProps> = ({
 		<>
 			{active && (
 				<motion.button
-					whileTap={{ scale: 0.9 }}
+					whileTap={{ scale: 0.95 }}
 					whileHover={{
-						scale: 1.1,
-						backgroundColor: "#000000",
-						color: "#C0C0C0",
-						border: "solid #C0C0C0 2px",
+						scale: 1.05,
 					}}
 					transition={{ bounceDamping: 10, bounceStiffness: 600 }}
 					className={className}

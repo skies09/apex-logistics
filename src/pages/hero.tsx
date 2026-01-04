@@ -4,25 +4,36 @@ import Button from "../components/button";
 const Hero = () => {
 	const renderText = () => {
 		return (
-			<div className="flex flex-col justify-center items-center md:justify-start md:items-start rounded-md p-4 bg-colorOne md:bg-opacity-50">
+			<div className="flex flex-col justify-center items-center md:justify-start md:items-start rounded-lg p-6 md:p-8 bg-white/95 backdrop-blur-sm shadow-elevated lg:border-l-4 lg:border-accentOrange">
 				<motion.p
 					className=""
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 0.5 }}
 				>
-					<span className="font-racing font-semibold text-3xl md:text-5xl m-1 lg:text-6xl text-colorThree md:drop-shadow-lg tracking-wide opacity-100">
+					<span className="font-racing font-bold text-4xl md:text-6xl m-1 lg:text-7xl text-colorThree md:drop-shadow-lg tracking-tight opacity-100">
 						Apex Logistics
 					</span>
 				</motion.p>
 				<motion.p
-					className="mt-3"
+					className="mt-4"
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
-					transition={{ duration: 1, delay: 0.5 }}
+					transition={{ duration: 1, delay: 0.7 }}
 				>
-					<span className="font-fugaz text-xl md:text-3xl m-1 text-colorThree text-center md:text-left drop-shadow-2xl tracking-widest md:tracking-wider">
+					<span className="font-fugaz text-2xl md:text-4xl m-1 text-colorOne text-center md:text-left drop-shadow-lg tracking-wide font-semibold">
 						Driver Hire
+					</span>
+				</motion.p>
+				<motion.p
+					className="mt-4 max-w-lg"
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{ duration: 1, delay: 0.9 }}
+				>
+					<span className="font-zilla text-base md:text-lg text-mediumGray text-center md:text-left leading-relaxed">
+						Fast. Safe. Secure. Professional driving services you
+						can trust.
 					</span>
 				</motion.p>
 			</div>
@@ -32,8 +43,8 @@ const Hero = () => {
 	const renderButton = () => {
 		return (
 			<Button
-				text="Contact"
-				className="font-fugaz px-6 py-2 bg-colorOne text-colorThree border border-colorOne rounded-xl tracking-wider font-semibold lg:overflow-hidden"
+				text="Get Started"
+				className="font-fugaz px-8 py-3 bg-accentOrange text-white border-2 border-accentOrange rounded-lg tracking-wider font-semibold shadow-accent hover:bg-accentAmber hover:border-accentAmber transition-all duration-300"
 				active={true}
 				action={() => {
 					const contactSection = document.getElementById("contact");

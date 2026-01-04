@@ -3,58 +3,94 @@ import { motion } from "framer-motion";
 export default function About() {
 	return (
 		<section
-			className="w-screen overflow-x-hidden px-6 py-12 md:py-20 bg-white"
+			className="w-screen overflow-x-hidden px-6 py-16 md:py-24 bg-gradient-to-br from-lightGray via-white to-colorFive"
 			id="about"
 		>
-			<div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-12 items-center">
+			<div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-16 items-center">
 				{/* Text Section */}
 				<motion.div
 					initial={{ opacity: 0, x: -50 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
+					className="space-y-6"
 				>
-					<h2 className="text-3xl md:text-4xl font-bold mb-4 text-colorThree font-fugaz">
-						About Me
-					</h2>
-					<p className="text-colorTwo font-zilla text-lg leading-relaxed">
+					<div className="flex items-center gap-3 mb-2">
+						<div className="h-1 w-12 bg-accentOrange"></div>
+						<h2 className="text-4xl md:text-5xl font-bold text-colorThree font-fugaz">
+							About Me
+						</h2>
+						<div className="h-1 w-12 bg-accentOrange"></div>
+					</div>
+					<p className="text-mediumGray font-zilla text-lg md:text-xl leading-relaxed">
 						I'm a professional driver with over{" "}
-						<span className="font-semibold">
+						<span className="font-bold text-colorOne">
 							10 years of driving experience
 						</span>{" "}
 						on both urban and long-distance routes. I take pride in
 						providing safe, punctual, and comfortable rides for my
 						clients or cargo.
 					</p>
-					<p className="text-colorTwo font-zilla text-lg mt-4">
+					<p className="text-mediumGray font-zilla text-lg md:text-xl leading-relaxed">
 						I hold a{" "}
-						<span className="font-semibold">
+						<span className="font-bold text-colorOne">
 							full clean UK driving license
 						</span>{" "}
 						and have extensive qualifications in the transport
 						sector:
 					</p>
-					<ul className="text-colorTwo font-bebas text-lg mt-4 list-disc pl-6">
-						<li>
-							Class 1 & Class 2 Heavy Goods Vehicle (HGV) licenses
+					<ul className="text-colorTwo font-oswald text-lg md:text-xl mt-6 space-y-3">
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>
+								Class 1 & Class 2 Heavy Goods Vehicle (HGV)
+								licenses
+							</span>
 						</li>
-						<li>Bus and Coach License</li>
-						<li>Tachograph (Tacho)</li>
-						<li>
-							Full Driver Certificate of Professional Competence
-							(CPC)
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>Bus and Coach License</span>
 						</li>
-						<li>ADR (Dangerous Goods) License</li>
-						<li>Forklift certified</li>
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>Tachograph (Tacho)</span>
+						</li>
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>
+								Full Driver Certificate of Professional
+								Competence (CPC)
+							</span>
+						</li>
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>ADR (Dangerous Goods) License</span>
+						</li>
+						<li className="flex items-start gap-3">
+							<span className="text-accentOrange font-bold mt-1">
+								✓
+							</span>
+							<span>Forklift certified</span>
+						</li>
 					</ul>
-					<p className="text-colorTwo font-zilla text-lg mt-4">
-						Whether it’s airport runs, business meetings, special
+					<p className="text-mediumGray font-zilla text-lg md:text-xl mt-6 leading-relaxed">
+						Whether it's airport runs, business meetings, special
 						occasions, or transporting goods of any kind, I am
 						equipped to move almost anything that needs to be
 						transported. From furniture to freight, I ensure a safe
 						and efficient service every time.
 					</p>
-					<p className="text-colorTwo font-zilla text-lg mt-4">
+					<p className="text-mediumGray font-zilla text-lg md:text-xl mt-4 leading-relaxed">
 						No matter the size or nature of the task, I aim to
 						provide reliable, professional, and stress-free
 						transport solutions tailored to your needs.
@@ -67,11 +103,13 @@ export default function About() {
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ duration: 0.6 }}
 					viewport={{ once: true }}
+					className="relative"
 				>
+					<div className="absolute -inset-4 bg-gradient-to-br from-colorOne to-accentOrange opacity-20 rounded-3xl blur-xl"></div>
 					<img
 						src="/assets/images/me.jpg"
 						alt="Driver with vehicle"
-						className="rounded-2xl shadow-lg w-full h-auto object-cover"
+						className="relative rounded-2xl shadow-elevated w-full h-auto object-cover border-4 border-white"
 					/>
 				</motion.div>
 			</div>
