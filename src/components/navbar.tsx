@@ -75,8 +75,8 @@ const Navbar = ({ menuOpen, setMenuOpen }: NavbarProps) => {
 									: "scale-0 rotate-0"
 							}`}
 						>
-							<span className="block w-8 h-1 bg-colorOne rounded-full transform -rotate-45 absolute"></span>
-							<span className="block w-8 h-1 bg-colorOne rounded-full transform rotate-45 absolute"></span>
+							<span className="block w-8 h-1 bg-accentOrange rounded-full transform -rotate-45 absolute"></span>
+							<span className="block w-8 h-1 bg-accentOrange rounded-full transform rotate-45 absolute"></span>
 						</div>
 					</div>
 				</div>

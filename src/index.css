@@ -19,3 +19,27 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+
+/* Icon color filters */
+.icon-blue {
+	filter: brightness(0) saturate(100%) invert(24%) sepia(95%) saturate(2476%) hue-rotate(195deg) brightness(100%) contrast(100%);
+}
+
+.icon-orange {
+	filter: brightness(0) saturate(100%) invert(58%) sepia(95%) saturate(2476%) hue-rotate(345deg) brightness(105%) contrast(100%);
+}
+
+/* Animated gradient */
+@keyframes gradient-x {
+	0%, 100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.animate-gradient-x {
+	background-size: 200% 200%;
+	animation: gradient-x 3s ease infinite;
+}

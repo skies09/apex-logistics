@@ -122,7 +122,7 @@ const Hero = () => {
 			</div>
 			{/*Mobile*/}
 			<motion.div
-				className="relative flex flex-col justify-center items-center md:hidden w-full py-8 z-30"
+				className="relative flex flex-col justify-center items-center md:hidden w-full z-30"
 				initial={{ opacity: 0, scale: 0.5, x: -200 }}
 				animate={{ opacity: 1, scale: 1, x: 0 }}
 				transition={{
