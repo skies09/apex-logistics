@@ -188,10 +188,10 @@ const Contact = () => {
 			id="contact"
 		>
 			<motion.div
-				initial={{ opacity: 0, y: -50 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-				viewport={{ once: true }}
+				initial={{ opacity: 0, y: -150, scale: 0.9 }}
+				whileInView={{ opacity: 1, y: 0, scale: 1 }}
+				transition={{ duration: 0.5, ease: "easeOut" }}
+				viewport={{ once: true, margin: "-100px" }}
 				className="pt-20 lg:pt-24 pb-8"
 			>
 				<div className="text-center max-w-3xl mx-auto px-4">
@@ -214,10 +214,10 @@ const Contact = () => {
 			<div className="pt-4 lg:pt-8 flex flex-col lg:flex-row justify-center items-center w-full lg:w-4/5 mx-auto px-4">
 				<motion.div
 					className="w-full lg:w-10/12 flex justify-center items-start"
-					initial={{ opacity: 0, y: 30 }}
-					whileInView={{ opacity: 1, y: 0 }}
-					transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-					viewport={{ once: true }}
+					initial={{ opacity: 0, y: 200, scale: 0.85 }}
+					whileInView={{ opacity: 1, y: 0, scale: 1 }}
+					transition={{ duration: 0.5, ease: "easeOut" }}
+					viewport={{ once: true, margin: "-100px" }}
 				>
 					{!formSubmitted && <ContactForm />}
 					{formSubmitted && (

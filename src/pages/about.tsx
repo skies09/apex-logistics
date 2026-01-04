@@ -9,10 +9,10 @@ export default function About() {
 			<div className="container mx-auto max-w-7xl grid md:grid-cols-2 gap-16 items-center">
 				{/* Text Section */}
 				<motion.div
-					initial={{ opacity: 0, x: -50 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 0.6 }}
-					viewport={{ once: true }}
+					initial={{ opacity: 0, x: -150, scale: 0.9 }}
+					whileInView={{ opacity: 1, x: 0, scale: 1 }}
+					transition={{ duration: 0.5, ease: "easeOut" }}
+					viewport={{ once: true, margin: "-100px" }}
 					className="space-y-6"
 				>
 					<div className="flex items-center gap-3 mb-2">
@@ -99,10 +99,10 @@ export default function About() {
 
 				{/* Image Section */}
 				<motion.div
-					initial={{ opacity: 0, x: 50 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ duration: 0.6 }}
-					viewport={{ once: true }}
+					initial={{ opacity: 0, x: 150, scale: 0.9 }}
+					whileInView={{ opacity: 1, x: 0, scale: 1 }}
+					transition={{ duration: 0.5, ease: "easeOut" }}
+					viewport={{ once: true, margin: "-100px" }}
 					className="relative"
 				>
 					<div className="absolute -inset-4 bg-gradient-to-br from-colorOne to-accentOrange opacity-20 rounded-3xl blur-xl"></div>

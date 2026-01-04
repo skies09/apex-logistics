@@ -14,9 +14,14 @@ const IconCloud = () => {
 			<motion.a
 				id="artic"
 				className="flex flex-col items-center text-center group cursor-pointer flex-1"
-				initial={{ y: 20, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ type: "spring", stiffness: 250, damping: 15 }}
+				initial={{ y: 20, opacity: 0, scale: 0.6 }}
+				animate={{ y: 0, opacity: 1, scale: 1 }}
+				transition={{
+					type: "spring",
+					stiffness: 100,
+					damping: 8,
+					mass: 0.8,
+				}}
 				whileHover={{ y: -5 }}
 			>
 				<div className="relative p-6 md:p-8 rounded-2xl bg-white shadow-primary group-hover:shadow-accent transition-all duration-300 group-hover:scale-105 border-2 border-transparent group-hover:border-accentOrange/30">
@@ -35,12 +40,13 @@ const IconCloud = () => {
 			<motion.a
 				id="rigid"
 				className="flex flex-col items-center text-center group cursor-pointer flex-1"
-				initial={{ y: 20, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
+				initial={{ y: 20, opacity: 0, scale: 0.6 }}
+				animate={{ y: 0, opacity: 1, scale: 1 }}
 				transition={{
 					type: "spring",
-					stiffness: 250,
-					damping: 15,
+					stiffness: 200,
+					damping: 12,
+					mass: 0.8,
 					delay: 0.1,
 				}}
 				whileHover={{ y: -5 }}
@@ -61,12 +67,13 @@ const IconCloud = () => {
 			<motion.a
 				id="coach"
 				className="hidden md:flex flex-col items-center text-center group cursor-pointer flex-1"
-				initial={{ y: 20, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
+				initial={{ y: 20, opacity: 0, scale: 0.6 }}
+				animate={{ y: 0, opacity: 1, scale: 1 }}
 				transition={{
 					type: "spring",
-					stiffness: 250,
-					damping: 15,
+					stiffness: 200,
+					damping: 12,
+					mass: 0.8,
 					delay: 0.2,
 				}}
 				whileHover={{ y: -5 }}
