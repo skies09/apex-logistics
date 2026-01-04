@@ -4,7 +4,7 @@ import Button from "../components/button";
 const Hero = () => {
 	const renderText = () => {
 		return (
-			<div className="flex flex-col justify-center items-center md:justify-start md:items-start rounded-lg p-6 md:p-8 bg-white/95 backdrop-blur-sm shadow-elevated lg:border-l-4 lg:border-accentOrange">
+			<div className="flex flex-col justify-center items-center md:justify-start md:items-start rounded-lg p-6 md:p-8 bg-white/50 backdrop-blur-sm shadow-elevated lg:border-l-4 lg:border-accentOrange">
 				<motion.p
 					className=""
 					initial={{ opacity: 0 }}
