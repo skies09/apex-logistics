@@ -1,46 +1,51 @@
-# Getting Started with Create React App
+## Apex Logistics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Modern single-page marketing site for a professional driver and logistics services, built with React and Tailwind CSS. It showcases services, experience, qualifications, and includes animated sections and a contact form for enquiries.
 
-## Available Scripts
+### Tech stack
 
-In the project directory, you can run:
+- **Framework**: React (Create React App)
+- **Styling**: Tailwind CSS with a custom brand theme
+- **Animation**: Framer Motion
+- **Forms & Validation**: Formik + Yup
+- **Icons**: Font Awesome
 
-### `npm start`
+### Getting started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Install dependencies**:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+- **Run the dev server**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `npm run build`
+The app will be available at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Available scripts
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **`npm start`**: Run the app in development mode.
+- **`npm run build`**: Create a production build in the `build` folder.
+- **`npm test`**: Run tests in watch mode (if you add tests).
+- **`npm run eject`**: Eject CRA configuration (irreversible, usually not needed).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project structure (high level)
 
-### `npm run eject`
+- **`src/pages`**: Top-level sections like `hero`, `about`, `services`, and `contact`.
+- **`src/components`**: Reusable UI elements such as `navbar`, `button`, `menu`, `iconCloud`, and layout helpers.
+- **`tailwind.config.js`**: Tailwind setup with Apex Logistics brand colors, fonts, and shadows.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Building & deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To create an optimized production build:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Deploy the contents of the `build` folder to your static hosting provider (e.g. Netlify, Vercel, Firebase Hosting, or traditional web hosting).
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
